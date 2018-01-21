@@ -4,7 +4,7 @@ int main() {
 	int i,a,b;
 	printf("enter the odd number b/w ato b:\n");
 	scanf("%d%d",&a,&b);
-	for(i=1;i<=9;i++)
+	for(i=a;i<=b;i++)
 	{
 		if(i%2==1)
 		{
