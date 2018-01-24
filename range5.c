@@ -6,7 +6,7 @@ int main() {
  scanf("%d",&a);
  if(a<10)
  {
- 	printf("yse with in the range %d");
+ 	printf("yse with in the range %d",a);
  }
  else
  {
