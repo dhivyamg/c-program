@@ -8,8 +8,8 @@ int main(void) {
 	for(i=2;i<=limit;i++)
 	{
 		n=f+s;
-		s=f;
-		f=n;
+		f=s;
+		s=n;
 	}
 		printf("%d",n);
 	
