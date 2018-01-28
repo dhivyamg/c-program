@@ -11,8 +11,10 @@ int main(void) {
 	max=a[0];
 	for(i=1;i<=n;i++)
 	{
-		if((a[i])>max)
+		if(a[i]>max)
+	{
 		max=a[i];
+	}
 	}
 	printf("max value is %d",max);
 	return 0;
