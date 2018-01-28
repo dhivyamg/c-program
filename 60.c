@@ -10,8 +10,9 @@ int main(void) {
 		n=f+s;
 		f=s;
 		s=n;
-	}
+	
 		printf("%d",n);
+	}
 	
 	return 0;
 }
