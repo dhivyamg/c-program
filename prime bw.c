@@ -1,25 +1,30 @@
 #include <stdio.h>
-
 int main()
-
 {
-	int a,b,i,flag=0;
-	printf("enter the interval");
-	scanf("%d%d",&a,&b);
-	while(a<b)
-	{
-		for(i=2;i<a/2;i++)
-		{
-			if(a%i==0)
-			{
-				flag=1;
-				break;
-			}
-			if(flag==0&&(a%2!=0))
-			{
-				printf("%d",a);
-			}
-		}
-	}
-	return 0;
+    int low, high, i, flag;
+    printf("Enter two numbers(intervals): ");
+    scanf("%d %d", &low, &high);
+
+    printf("Prime numbers between %d and %d are: ", low, high);
+
+    while (low < high)
+    {
+        flag = 0;
+
+        for(i = 2; i <= low/2; ++i)
+        {
+            if(low % i == 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+
+        if (flag == 0)
+            printf("%d ", low);
+
+        ++low;
+    }
+
+    return 0;
 }
