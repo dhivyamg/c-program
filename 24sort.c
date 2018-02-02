@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	int a[50],i,j,n,temp;
+	int a[50],i,j,n,h;
 	printf("enetr the n value");
 	scanf("%d",&n);
 	for(j=1;j<=n;j++)
@@ -14,9 +14,9 @@ int main(void) {
 		{
 		if(a[j]>a[i])
 		{
-			temp=a[j];
+			h=a[j];
 			a[j]=a[i];
-			a[i]=temp;
+			a[i]=h;
 		}
 		}
 	}
