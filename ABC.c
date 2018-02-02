@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-	char a;
+	char ch;
 	printf("enter the letter");
-	scanf("%c",&a);
-	if(c>='a' && c<='z')
-	printf("%c albhabet",a);
+	scanf("%c",&ch);
+	if(ch>='a' && ch<='z')
+	printf("%c albhabet",ch);
 	else
-	printf("%c not albhabet",a);
+	printf("%c not albhabet",ch);
 	return 0;
 }
